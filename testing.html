@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <div class="first_container">
+        <h4 id="header_title">
+            Calculator
+        </h4>
+
+        <input onkeypress="displayinfo()" type="text" id="number1" size="5">
+        <input onkeypress="displayinfo()" type="text" id="number2" size="5">
+
+
+        
+
+        <h1 id="value1">
+            
+        </h1>
+        <h1 id="value2">
+            
+        </h1>
+
+        <h1 id="operator">
+            
+        </h1>
+        <h1 id="answer">
+            
+        </h1>
+        <h1 id="equals">
+            Answer:
+        </h1>
+
+        
+
+
+    </div>
+
+    <div class="buttons">
+        <button onclick="clears()" id="clr">Clear</button>
+
+        <button onclick="multiplication()">Multiply</button>
+        <button onclick="subtraction()">Subtract</button>
+        <button onclick="addition()">Add</button>
+        <button onclick="division()">Divide</button>
+
+
+    </div>
+</body>
+
+
+<script type="text/javascript">
+
+
+
+function clears(){
+    document.getElementById("value1").innerHTML= " ";
+    document.getElementById("value2").innerHTML = "";
+    document.getElementById("number1").value = "";
+    document.getElementById("number2").value = "";
+    document.getElementById("operator").innerHTML= " ";
+    document.getElementById("answer").innerHTML= " ";
+    document.getElementById("answer").innerHTML= " ";
+    
+}
+
+function displayinfo(){
+    document.getElementById("value1").innerHTML = document.getElementById("number1").value;
+    document.getElementById("value2").innerHTML = document.getElementById("number2").value;
+}
+
+function multiplication(){
+    var num1 = parseFloat(document.getElementById("number1").value);
+    var num2 = parseFloat(document.getElementById("number2").value);
+    var ans1;
+    ans1 = num1 * num2;
+    document.getElementById("operator").innerHTML = "x";
+    document.getElementById("answer").innerHTML = ans1;
+}
+function subtraction(){
+    var num1 = parseFloat(document.getElementById("number1").value);
+    var num2 = parseFloat(document.getElementById("number2").value);
+    var ans1;
+    ans1 = num1 - num2;
+    document.getElementById("operator").innerHTML = "-";
+    document.getElementById("answer").innerHTML = ans1;
+}
+function addition(){
+    var num1 = parseFloat(document.getElementById("number1").value);
+    var num2 = parseFloat(document.getElementById("number2").value);
+    var ans1;
+    ans1 = num1 + num2;
+    document.getElementById("operator").innerHTML = "+";
+    document.getElementById("answer").innerHTML = ans1;
+}
+function division(){
+    var num1 = parseFloat(document.getElementById("number1").value);
+    var num2 = parseFloat(document.getElementById("number2").value);
+    var ans1;
+    ans1 = num1 / num2;
+    document.getElementById("operator").innerHTML = "%";
+    document.getElementById("answer").innerHTML = ans1;
+}
+
+
+
+</script>
+
+</html>

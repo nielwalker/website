@@ -1,0 +1,101 @@
+body{
+    background-color: grey;
+    align-items:center;
+    align-content: center;
+}
+
+
+.first_container{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: rgb(27, 18, 153);
+    border: 5px solid black;
+    padding: 20%;
+    padding-left: 400px;
+    padding-bottom: 160px;
+    border-style: groove;
+}
+.buttons{
+    position: absolute;
+    left: 230px;
+    top: 250px;
+    justify-content: space-between;
+    border: 5px solid black;
+    padding: 30px; 
+}
+
+
+#header_title{
+    position: absolute;
+    top: 300px;
+    left: 260px;
+    font-size: 40px;
+    color: yellow;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 5px;
+}
+#header_title:hover{
+    position: absolute;
+    top: 290px;
+    left: 245px;
+    font-size: 50px;
+    color: yellow;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 5px;
+    animation-delay: 0.1ms;
+    animation: forwards;
+    animation-duration: 3ms;
+}
+
+#number1{
+    position: absolute;
+    top: 43px;
+    left: 260px;
+
+}
+#number2{
+    position: absolute;
+    top: 43px;
+    left: 380px;
+
+}
+
+
+#value1{
+    position: absolute;
+    left: 290px;
+    top: 50px;
+    color: red;
+}
+#value2{
+    position: absolute;
+    left: 400px;
+    top: 50px;
+    color: red;
+}
+#operator{
+    position: absolute;
+    left: 345px;
+    top: 50px;
+    color: red;
+}
+#answer{
+    position: absolute;
+    left: 300px;
+    top: 90px;
+    color: red;
+}
+#equals{
+    position: absolute;
+    left: 170px;
+    top: 90px;
+    color: yellow;
+}
+.clr{
+    position: absolute;
+    left: 15px;
+    top: 90px;
+}

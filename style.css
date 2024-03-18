@@ -1,0 +1,89 @@
+* {
+    padding: 5;
+    margin: 5;
+}
+body {
+    background-color: gray;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+marquee {
+    background-color: red;
+    font-size: 18px;
+    color: white;
+}
+.left-logo-container {
+    padding: 10px;
+    float: left;
+    
+}
+
+ #PNG{
+    
+}
+
+h2 {
+    padding-left: 70px;
+}
+P {
+    padding-left: 90px;
+}
+#BM {
+    padding-left: 190px;
+    font-size: 15px;
+    height: 5vh;
+}
+.icons {
+    display: block;
+    font-size: 40px;
+    padding-left: 100px;
+}
+button {
+    display: block;
+    transform: translateX(-13px);
+    background-color: black;
+    color: white;
+    width: 330px;
+    font-size: 17px;
+    margin: 10px;
+    padding: 0.5em;
+}
+audio {
+    height: 8vh;
+    padding-left: 20px;
+}
+table {
+
+    padding: 10px;
+    display: table;
+    font-size: 23px;
+}
+td {
+    border-style: solid;
+    border-width: thin; 
+    width: 160px;
+}
+    border-style: solid;
+    border-width: thin; 
+    width: 160px;
+}
+    border-style: solid;
+    border-width: thin; 
+    width: 160px;
+}
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    background-color: aquamarine;
+}
+.form-label {
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"] {
+    padding: 0.5em;
+}
+select#country {
+    padding: 0.5em;
+}

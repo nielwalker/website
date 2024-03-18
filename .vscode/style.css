@@ -1,0 +1,148 @@
+p.sample{
+    text-align: center;
+    background: red;
+    height: 26px;
+    margin-top: -6px;
+    color: white;
+}
+
+img {
+    width: 315px;
+    margin-top: -8px;
+}
+
+h1 {
+    margin-left: 25px;
+    margin-top: 15px;
+    font-family: system-ui;
+}
+
+h2 {
+    color: #c7c7c7;
+    font-family: serif;
+    font-size: 19px;
+    margin-left: 28px;
+}
+
+h3 {
+    margin-left: 135px;
+    font-family: sans-serif;
+}
+
+svg {
+    width: 13px;
+    margin-left: 125px;
+}
+
+svg.svg2 {
+    width: 20px;
+    margin-left: 3px;
+    margin-top: 0px;
+}
+
+svg.svg3 {
+    width: 18px;
+    margin-left: 4px;
+}
+
+button {
+    background: black;
+    color: white;
+    width: 315px;
+    height: 40px;
+    font-size: larger;
+    margin-top: 25px;
+}
+
+audio {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+td.align-right {
+    text-align: right;
+    width: 250px;
+    font-weight: bold;
+}
+td.align-center {
+    text-align: center;
+    width: 40px;
+    font-weight: bold;
+}
+td.align-left {
+    text-align: left;
+    width: 480px;
+}
+td {
+    border-style: solid;
+    border-width: thin;
+    height: 37px;
+}
+table {
+    font-size: 24px;
+}
+#right-cont h2 {
+    text-align: center;
+    font-size: 35px;
+}
+div#form {
+    border-style: solid;
+    border-width: thin;
+    padding: 15px;
+}
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+input[type="text"] {
+    font-size: 16px;
+    width: 745px;
+    height: 34px;
+    margin-bottom: 13px;
+    outline: none;
+}
+select#country {
+    width: 754px;
+    height: 34px;
+    margin-bottom: 13px;
+    outline: none;
+    font-size: 16px;
+}
+textarea#message {
+    width: 748px;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+}
+input[type="submit"] {
+    display: block;
+    width: 755px;
+    height: 44px;
+    font-size: 20px;
+    color: white;
+    background: #aa0404;
+    border: none;
+}
+div#content-cont {
+    margin-right: 18%;
+    margin-left: 18%;
+    background: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+div#header {
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+div#right-cont {
+    float: right;
+    margin-top: -752px;
+    margin-right: 430px
+}
+
+td.align-left {
+    text-align: left;
+    width: 730px;
+}
