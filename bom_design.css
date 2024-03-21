@@ -1,0 +1,19 @@
+.bomb_body{
+
+    z-index: -1;
+}
+
+#display_timer{
+    background-color: black;
+    color: red;
+    border: 5px solid grey;
+    width: 50px;
+    padding-left: 100px;
+    padding-right: 190px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 183px;
+    left: 575px;
+    font-size: 80px;
+}

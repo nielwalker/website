@@ -7,7 +7,24 @@
     <link rel="stylesheet" href="bom_design.css">
 </head>
 <body>
+    <div class="bomb_body">
+        <img src="bomb.png" id="BOMB" />
+
+        <div id="display_timer">
+            5:00
+        </div>
+        <input onkeypress="displayinfo()" type="text" id="number1" size="5">
+    </div>
     
-    
+
 </body>
+
+<script type="text/javascript">
+    
+    function displayinfo(){
+        document.getElementById("display_timer").innerHTML = document.getElementById("number1").value;
+        
+    }
+
+</script>
 </html>
