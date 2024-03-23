@@ -13,7 +13,14 @@
         <div id="display_timer">
             5:00
         </div>
-        <input onkeypress="displayinfo()" type="text" id="number1" size="5">
+        <div class="input_bomb_time">
+            
+            <input onkeypress="displayinfo()" type="text" id="time_input" size="5">
+        </div>
+        <div class="btn">
+            <button class="startButton">Start</button>
+        </div>
+        
     </div>
     
 
@@ -22,9 +29,41 @@
 <script type="text/javascript">
     
     function displayinfo(){
-        document.getElementById("display_timer").innerHTML = document.getElementById("number1").value;
+        document.getElementById("display_timer").innerHTML = document.getElementById("time_input").value;
         
     }
+        // Get references to the button and timer element
+    const startButton = document.getElementById('startButton');
+    const timerElement = document.getElementById('display_timer');
+
+    // Variable to store the timer
+    let timer;
+
+    // Function to start the timer
+    function startTimer() {
+    let seconds = 0;
+
+    // Update the timer every second
+    timer = setInterval(function() {
+        seconds++;
+        timerElement.textContent = formatTime(seconds);
+    }, 1000);
+    }
+
+    // Helper function to format time
+    function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes < 10 ? '0' : ''}${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+    }
+
+    // Event listener for the button click
+    startButton.addEventListener('click', function() {
+    // Start the timer
+    startTimer();
+    // Disable the button to prevent multiple clicks
+    startButton.disabled = true;
+    });
 
 </script>
 </html>
